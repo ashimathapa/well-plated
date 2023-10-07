@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/sanatanlogo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Well Plated</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h2>Well Plated</h2>
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Special</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Popular Recipe</a>
+          </li>
+          <!-- <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+       -->
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#login"
+              >login</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#sign-up"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Savor the
+          <span class="highlight">Delicious Food &</span>
+          <span class="highlight">Drinks Recipes</span> for Every Occasion
+        </h1>
+
+        <div class="head-discription">
+          <h4>
+            <p>Your Next Favorite Meal Starts Here</p>
+          </h4>
+        </div>
+        <button class="btn--text btn--scroll-to head-learn-more">
+          Recipe &DownArrow;
+        </button>
+        <img
+          src="./img/herosanatan.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+      <div class="modal hidden" id="login">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Get recipe from <br />
+          <span class="highlight">Well Plated</span>
+        </h2>
+        <form class="modal__form">
+          <label>Email</label>
+          <input type="text" />
+          <label>Password</label>
+          <input type="password" />
+          <a class="btn linked-to" href="login.php">login</a>
+          <p>SignUp for free <a href=""></a> <button type="button">signup</button></p>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+  
+      <div class="modal hidden" id="sign-up">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Taste from Well Plated <br />
+          in just <span class="highlight">5 minutes</span>
+        </h2>
+        <form class="modal__form">
+          <label>First Name</label>
+          <input type="text" />
+          <label>Last Name</label>
+          <input type="text" />
+          <label>Email </label>
+          <input type="email" />
+          <label>Password</label>
+          <input type="password" />
+          <a class="btn linked-to" href="signup.php">sign up &rarr;</a>
+          <p>Already have an account? <a href=""></a><button type="button">Login</button></p> 
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+    </body>
+  </html>
+  

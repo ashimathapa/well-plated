@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/sanatanlogo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Well Plated</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h2>Well Plated</h2>
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Special</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Popular Recipe</a>
+          </li>
+          <!-- <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+       -->
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#login"
+              >login</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#sign-up"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Savor the
+          <span class="highlight">Delicious Food &</span>
+          <span class="highlight">Drinks Recipes</span> for Every Occasion
+        </h1>
+
+        <div class="head-discription">
+          <h4>
+            <p>Your Next Favorite Meal Starts Here</p>
+          </h4>
+        </div>
+        <button class="btn--text btn--scroll-to head-learn-more">
+          Recipe &DownArrow;
+        </button>
+        <img
+          src="./img/herosanatan.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search by name..." />
+    </div>
+
+    <div id="person-list"></div>
+
+    <script src="search-component.js"></script>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <!-- <h2 class="section__description">Popular Recipes</h2>
+        <h3 class="section__header">Everything as simple as possible.</h3>
+      </div>
+ -->
+      <!-- <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>Milkshake</span>
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>Biryani</span>
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>Barbecue</span>
+          </button>
+        </div> -->
+        <!-- <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <ion-icon name="bookmarks-outline" class="t-icon"></ion-icon>
+          </div>
+          <h5 class="operations__header">How to make Milkshake!</h5>
+          <img class="tab-img" src="./img/milkshake.jpg" alt="milkshake" />
+          <p>
+            This is usually prepared by milk, ice cream or iced milk, emulsifier
+            and/or stabilizer, and flavorings or sweeteners (e.g., fruit syrup
+            or chocolate sauce). Milkshake contains ice cream unlike milk
+            smoothie. <br />
+            Traditionally, milkshake is served with a whipped cream as topping
+            in a tall glass with a straw. Master a few tricks below to ensure
+            you blend up a perfectly thick and creamy milkshake every time.<br />
+            Soften the ice cream and chill the glass.<br />
+            Take the ice cream out of the freezer for 10 to 15 minutes before
+            use.<br />
+            At the same time, place your glass in the freezer. This will keep
+            the shake cold when you serve it. Measure the ingredients.<br />
+            1 cup ice cream to 1/4 cup milk is a great ratio. Blend the
+            shake.<br />
+            In a blender, combine the milk and ice cream and blend until
+            smooth.<br />
+            Add any your mix-ins and blend them in to your desired
+            consistency.<br />
+            Serve. Pour the shake into the chilled glass and serve immediately.
+          </p>
+        </div> -->
+<!-- 
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <ion-icon name="bookmarks-outline" class="t-icon"></ion-icon>
+          </div>
+          <h5 class="operations__header">How to make Biryani?</h5>
+
+          <img class="tab-img" src="./img/biryani.jpg" alt="" />
+          <p>
+            Marinate meat with yogurt, ginger-garlic paste, salt, and spices.
+            Soak basmati rice and cook partially. Layer rice over meat, garnish,
+            and cook on low heat until done.
+            <br />
+            Sauté onions, spices, and marinated meat. Add partially cooked rice,
+            garnish, and cover. Cook on low heat until flavors meld and meat is
+            tender.
+            <br />
+            Serve hot with raita or curry.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <ion-icon name="checkmark-circle-outline" class="t-icon"></ion-icon>
+          </div> -->
+          <!-- <h5 class="operations__header">How to make Barbecue?</h5>
+
+          <img class="tab-img" src="./img/barbecue.jpg" alt="" />
+          <p>
+            Prepare the marinade by combining ingredients like soy sauce,
+            Worcestershire sauce, garlic, onion, paprika, and your preferred
+            spices.
+            <br />Marinate your choice of meat (such as chicken, beef, or pork)
+            in the mixture for at least 1-2 hours, allowing the flavors to
+            penetrate.
+            <br />
+            Preheat the grill to medium-high heat and lightly oil the grates to
+            prevent sticking.
+          </p>
+          <p>
+            Place the marinated meat on the grill and cook, turning
+            occasionally, until it reaches the desired level of doneness and
+            develops a nice char on the outside.
+            <br />Once cooked, remove the meat from the grill, let it rest for a
+            few minutes, and then serve it hot with your favorite barbecue sauce
+            or marinade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need to know about cooking.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="./img/nepali_khana.jpg"
+          alt="Computer"
+          class="features__img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <ion-icon name="logo-electron" class="f-icons"></ion-icon>
+          </div>
+          <h5 class="features__header">Nepali Khana Special</h5>
+          <p>
+            Nepali khana (Nepali food) features rich flavors with aromatic
+            spices. It uses locally sourced, seasonal ingredients and includes
+            staple foods like rice and lentils. Momos and unique desserts add to
+            its appeal, reflecting Nepal's cultural heritage.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <ion-icon name="logo-electron" class="f-icons"></ion-icon>
+          </div>
+          <h5 class="features__header">Snacks</h5>
+          <p>
+            Snacks offer convenience with quick and easy preparation. They come
+            in a variety of flavors, satisfying diverse cravings. Portable and
+            small in portion size, snacks are suitable for on-the-go
+            consumption. Snacks foster social connections and provide a quick
+            energy boost.
+          </p>
+        </div>
+        <img src="./img/burgercombo.jpg" alt="Plant" class="features__img" />
+
+        <img
+          src="./img/smoothie_homemade.jpg"
+          alt="Credit card"
+          class="features__img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <ion-icon name="logo-electron" class="f-icons"></ion-icon>
+          </div>
+          <h5 class="features__header">Drinks & Shakes</h5>
+          <p>
+            Drinks come in a wide variety of flavors, catering to diverse
+            preferences. They offer hydration and can complement meals or
+            snacks. Some drinks provide a relaxing or energizing effect,
+            depending on the type. Beverages play a social role, fostering
+            gatherings and celebrations.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Chefs Working with Well Plated!</h2>
+        <h3 class="section__header">
+          Professional Chefs providing authentic recepie.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Cooking Simplified!</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+              excepturi quisquam sapiente voluptatum eaque iste velit
+              voluptatem, corrupti accusantium repellat necessitatibus, quasi
+              distinctio laudantium similique nesciunt dolorum qui expedita
+              perferendis error quas. Qui, porro incidunt quo harum dolorum
+              beatae, dignissimos officia, dolore similique alias cupiditate
+              facilis modi reiciendis quam enim.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">kiran Shrestha</h6>
+              <p class="testimonial__location">lamachour</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              I love trying our these recipes!
+            </h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium vel quasi porro consectetur dicta dignissimos amet nam,
+              eaque assumenda, odit dolor maiores reiciendis, aliquid
+              consequuntur? Laboriosam, asperiores rem. Sapiente autem eum, cum,
+              exercitationem rerum beatae laborum culpa quaerat perferendis
+              assumenda doloremque rem labore provident eligendi neque expedita
+              excepturi? Est, laborum!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./img/user-3.jpg" alt="" class="testimonial__photo" />
+
+              <h6 class="testimonial__name">Krishna Adhikari</h6>
+              <p class="testimonial__location">Simpani</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Foods are as much delicious as I am cool!😎😉
+            </h5>
+            <blockquote class="testimonial__text">
+              Sanatana dharma is a beautiful thing that can bring people
+              together and provide them with a sense of peace and purpose. It is
+              also be a source of strength and inspiration in times of hardship.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="./img/user-2.jpg" alt="" class="testimonial__photo" />
+
+              <h6 class="testimonial__name">Laxmi Acharya</h6>
+              <p class="testimonial__location">Parsyang</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section> -->
+
+    <!-- <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Lets explore foods from all over the world.
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section> -->
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <!-- IF you want to upload logo of Well Plated, pass the photo in below img tag -->
+      <!-- <img src="#" alt="Logo" class="footer__logo" /> -->
+
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >Well Plated 2023. All Rights Reserved.</a
+        >
+
+        <!-- <br /> -->
+      </p>
+    </footer>
+
+    <div class="modal hidden" id="login">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Get recipe from <br />
+        <span class="highlight">Well Plated</span>
+      </h2>
+      <form class="modal__form">
+        <label>Email</label>
+        <input type="text" />
+        <label>Password</label>
+        <input type="password" />
+        <a class="btn linked-to" href="login.php">login</a>
+        <p>SignUp for free <a href=""></a> <button type="button">signup</button></p>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="modal hidden" id="sign-up">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Taste from Well Plated <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>  
+        <input type="text" />
+        <label>Email </label>
+        <input type="email" />
+        <label>Password</label>
+        <input type="password" />
+        <a class="btn linked-to" href="signup.php">sign up &rarr;</a>
+        <p>Already have an account? <a href=""></a><button type="button">Login</button></p> 
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
